@@ -11,7 +11,7 @@ Clone the repo somewhere and load the library:
 
 `require_once('path/to/slack-notify/Loader.php');`
 
-The library does not use an autoloaded, is not namespaced and does not come with support for installing with composer.
+The library does not use an autoloader, is not namespaced and does not come with support for installing with composer.
 This makes it easy to integrate into legacy projects.
 
 **Warning**: SSL check is disabled in the cURL settings. Check out `SlackClient.php` for more.
