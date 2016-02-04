@@ -39,8 +39,10 @@ Even "plain text" messages can be formatted using Slack's markdown implementatio
 $client = new SlackClient('https://hooks.slack.com/services/xx/xx/xxxx');
 $client->to('#test')->instantMessage('Hello, *world*!');
 ```
-If you use `instantMessage`, the default webhook username and icon will be used.
+
 ![Example](http://i.imgur.com/ND6oWwv.png)
+
+If you use `instantMessage`, the default webhook username and icon will be used.
 
 ### Sending a simple message with custom user name and icon
 
