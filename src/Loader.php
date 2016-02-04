@@ -10,4 +10,3 @@
 
 require_once('SlackClient.php');
 require_once('SlackMessage.php');
-require_once('FormattedSlackMessage.php');

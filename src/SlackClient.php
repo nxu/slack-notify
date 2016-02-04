@@ -27,9 +27,9 @@ class SlackClient
     }
 
     /**
-     * Initializes a message to be sent.
+     * Initializes a messageObj to be sent.
      *
-     * @param null|string $channel Name of the channel to send the message to.
+     * @param null|string $channel Name of the channel to send the messageObj to.
      * @return SlackMessage
      */
     public function to($channel = null)
@@ -45,7 +45,7 @@ class SlackClient
      */
     public function sendPayload($message)
     {
-        // Prepare message
+        // Prepare messageObj
         $message = 'payload=' . json_encode($message);
 
         // Open cURL connection
@@ -64,7 +64,7 @@ class SlackClient
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
-        // Send message and return result
+        // Send messageObj and return result
         $result = curl_exec($ch);
         curl_close($ch);
         return $result;
